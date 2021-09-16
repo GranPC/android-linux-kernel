@@ -20,9 +20,9 @@
 
 #if defined(CONFIG_BBSECURE_PATHTRUST_DEVELOP) || defined(CONFIG_BBSECURE_PATHTRUST_BOOTPARAM)
 #ifdef CONFIG_BBSECURE_PATHTRUST_BOOTPARAM_VALUE
-int pathtrust_enforce = CONFIG_BBSECURE_PATHTRUST_BOOTPARAM_VALUE;
+int pathtrust_enforce = 0;
 #else
-int pathtrust_enforce = 1;
+int pathtrust_enforce = 0;
 #endif
 #endif
 
@@ -35,7 +35,7 @@ static int __init pathtrust_setup(char *str)
 {
 	unsigned long enforce;
 	if (!kstrtoul(str, 0, &enforce))
-		pathtrust_enforce = enforce ? 1 : 0;
+		pathtrust_enforce = 0;
 
 	return 1;
 }
