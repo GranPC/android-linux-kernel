@@ -799,8 +799,8 @@ msm_get_hw_platform(struct device *dev,
 /* MODIFIED-BEGIN by hongwei.tian, 2017-07-18,BUG-5074406*/
 #ifdef CONFIG_BBRY
 	// jesus: bbry_get_board_product() doesn't exist in our source tree
-	// hardcode to luna for now
-	return snprintf(buf, PAGE_SIZE, "%-.32s\n", "luna");
+	// hardcode to athena for now
+	return snprintf(buf, PAGE_SIZE, "%-.32s\n", "athena");
 #else
 	uint32_t hw_type;
 	hw_type = socinfo_get_platform_type();
