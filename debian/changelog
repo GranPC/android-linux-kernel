@@ -1,0 +1,29 @@
+linux-android-blackberry-athena (0.0.0+git20230829122528.ad999af.jesus.droidian.athena.ace748.insecure) jesus; urgency=medium
+
+  [ Jesús Higueras ]
+  * build: +x scripts
+  * Build scripts
+  * build: replace missing netfilter names
+  * build: disable bbry_get_board_product() call
+  * Force disable pathtrust so Magisk works
+  * Force disable module signature verification so wifi works
+  * Let there be athena!
+  * Disable debug info. Makes vmlinux too large.
+  * Fix `yylloc` double definition issue. Not sure why this is popping up now.
+  * Let there be gzip!
+  * drivers/socinfo: hardcode "athena", not "luna"
+  * add droidian packaging and kernel config
+
+  [ Mark Sohm ]
+  * Kernel Source Code for SDM636 ACE748 Image
+  * Kernel Source Code for SDM636 ACE748 Image
+
+  [ David Legault ]
+  * Update README.md
+  * Update README.md
+
+  [ Tim Windsor ]
+  * Initial commit
+
+ -- Jesús Higueras <jesus@dabbleam.com>  Tue, 29 Aug 2023 14:25:28 +0200
+
