@@ -580,6 +580,17 @@ asmlinkage __visible void __init start_kernel(void)
 	 */
 	boot_init_stack_canary();
 	mm_init_cpumask(&init_mm);
+        // jesus hack: hardcode console=tty0 because blackberry hardcoded console=null
+        char *console_null = strstr(command_line, "console=null");
+        if (console_null)
+        {
+            memcpy(console_null, "console=tty0", 12);
+            pr_notice("Patched cmdline to include console=tty0");
+        }
+        else
+        {
+            pr_notice("Could not find console=null in cmdline...");
+        }
 	setup_command_line(command_line);
 	setup_nr_cpu_ids();
 	setup_per_cpu_areas();
