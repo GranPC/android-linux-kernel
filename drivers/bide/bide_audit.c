@@ -25,8 +25,6 @@
 #include "bide_log.h"
 #include "bide_proc.h"
 
-#include "../soc/qcom/bbry/devices_bbry.c"
-
 #define TLV_TYPE_BUNDLE		100
 #define TLV_TYPE_AUDIT		120
 #define TLV_TYPE_AUDIT_PNAME	121
