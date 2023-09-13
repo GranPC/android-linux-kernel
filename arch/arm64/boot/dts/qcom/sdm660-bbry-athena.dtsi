@@ -471,11 +471,14 @@
 	        ak4376@10 {
 	            compatible = "akm,ak4376";
 	            reg = <0x10>;
-	            akm,dac-gpio = <&tlmm 27 0x00>;
-	            akm,ldo-gpio = <&pm660l_gpios 5 0x00>;
-	            vdd-supply = <&pm660_l13>;
-//	            clocks = <&clock_gcc clk_div_clk2>;
-//		     clock-names = "ref_clk";
+//	            akm,dac-gpio = <&tlmm 27 0x00>;
+//	            akm,ldo-gpio = <&pm660l_gpios 5 0x00>;
+//	            vdd-supply = <&pm660_l13>;
+                                akm,dac-gpio = <0xec 0x1b 0x00>;
+                                akm,ldo-gpio = <0x19b 0x05 0x00>;
+                                vdd-supply = <0x19a>;
+	            // clocks = <&clock_gcc clk_div_clk2>;
+		    // clock-names = "ref_clk";
 
 	        };
 	        /* MODIFIED-END by hongwei.tian,BUG-5247152*/
