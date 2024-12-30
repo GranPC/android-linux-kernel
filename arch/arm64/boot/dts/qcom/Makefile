@@ -289,8 +289,7 @@ dtb-$(CONFIG_ARCH_SDM630_TCT_NOT_DEFINED) += sdm630-rumi.dtb \
 
 # [PLATFORM]-Add-BEGIN by TCTNB.Alvin, 2018-04-02, Defect#6154948, Remove unused dtb
 dtb-$(CONFIG_ARCH_SDM660) += sdm660-internal-codec-mtp-athena.dtb \
-	sdm636-internal-codec-mtp-luna.dtb \
-	sdm636-internal-codec-mtp-minerva.dtb
+	sdm636-internal-codec-mtp-luna.dtb
 # [PLATFORM]-Add-END by TCTNB.Alvin, 2018-04-02
 
 ifeq ($(CONFIG_ARM64),y)

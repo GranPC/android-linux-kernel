@@ -12,8 +12,6 @@
 
 #include "sdm660-pinctrl.dtsi"
 
-/* [PLATFORM]-DEL-BEGIN by jin.wang, 2018/7/6 */
-/*
 / {
 	mtp_batterydata: qcom,battery-data {
 		qcom,batt-id-range-pct = <15>;
@@ -21,8 +19,6 @@
 		#include "fg-gen3-batterydata-ascent-3450mah.dtsi"
 	};
 };
-*/
-/* [PLATFORM]-DEL-END by Jin.Wang, 2018/7/6 */
 
 &uartblsp1dm1 {
 	status = "ok";
@@ -264,13 +260,9 @@
 	qcom,peripheral-size = <0xf00000>;
 };
 
-/* [PLATFORM]-DEL-BEGIN by jin.wang, 2018/7/6 */
-/*
 &pm660_fg {
 	qcom,battery-data = <&mtp_batterydata>;
 };
-*/
-/* [PLATFORM]-DEL-END by Jin.Wang, 2018/7/6 */
 
 &i2c_2 {
 	status = "ok";

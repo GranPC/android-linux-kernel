@@ -1054,19 +1054,17 @@
 	qcom,float-option = <1>;
 	qcom,step-charging-enable;
 	qcom,sw-jeita-enable;
-	qcom,thermal-mitigation = <3000000 2500000 2000000 1500000 1000000 500000>;
+	qcom,thermal-mitigation = <3200000 2500000 2000000 1500000 1000000 500000>;
 	qcom,fv-max-uv = <4402500>;
-	qcom,fcc-max-ua = <3000000>;
-	tcl,pre-chg-safety-timer = <3>;  // 192 mins
-	tcl,fast-chg-safety-timer = <3>; // 1536 mins
+	qcom,fcc-max-ua = <3200000>;
 };
 
 &pm660_fg {
 	status = "ok";
 	qcom,battery-data = <&athena_batterydata>;
-	qcom,fg-jeita-thresholds = <2 10 45 54>;
+	qcom,fg-jeita-thresholds = <0 10 45 54>;
 	qcom,fg-jeita-hyst-temp = <2>;
-	qcom,fg-batt-temp-delta = <2>;
+	qcom,fg-batt-temp-delta = <4>;
 	qcom,fg-sys-term-current = <(-250)>;
 	qcom,fg-force-load-profile;
 	qcom,hold-soc-while-full;
@@ -1080,8 +1078,6 @@
 	qcom,fg-auto-recharge-soc;
 	qcom,fg-recharge-soc-thr = <99>;
 	qcom,fg-cutoff-voltage = <3400>;
-	qcom,fg-rsense-sel = <0>;
-	qcom,cl-max-temp = <430>;  /* depends on step-chg */
 };
 
 /* MODIFIED-BEGIN by Wu Yan, 2017-10-13,BUG-5395575*/

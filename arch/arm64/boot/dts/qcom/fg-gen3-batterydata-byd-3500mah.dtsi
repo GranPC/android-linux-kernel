@@ -16,7 +16,7 @@ qcom,3300156_tcl_byd_3500mah {
 	qcom,max-voltage-uv = <4402500>;
 	qcom,nom-batt-capacity-mah = <3500>;
 	qcom,fg-cc-cv-threshold-mv = <4390>;
-	qcom,fastchg-current-ma = <3000>;
+	qcom,fastchg-current-ma = <3200>;
 	qcom,batt-id-kohm = <18>;
 	qcom,battery-beta = <3435>;
 	qcom,battery-type = "byd-3500mah";
